@@ -3,11 +3,26 @@
 <head>
   <title>Me and Greg's Practice App!</title>
 </head>
-<body>
+<body ng-app="app">
+  <!-- App Dependencies -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/underscore/underscore.js"></script>
 
-  <div></div>
+  <div ng-controller="AppController">
+    <h1 ng-if="showHeader">This is a sweet ass Header!</h1>
+
+    <input type="text" ng-model="todo">
+
+    <button ng-click="addTodo('what up')">Add Todo</button>
+
+    <div ng-repeat="todo in todos" ng-mouseenter="deleteTodo($index)">
+      {{ todo }}
+    </div>
 
 
-  <script src="./app.js"></script>
+  </div>
+
+  <!-- App Scripts -->
+  <script src="./app/app.js"></script>
 </body>
 </html>
