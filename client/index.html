@@ -16,10 +16,14 @@
     <button ng-click="addTodo('what up')">Add Todo</button>
 
     <div ng-repeat="todo in todos" ng-mouseenter="deleteTodo($index)">
-      {{ todo }}
+      <h4>{{ todo.data.author }}</h4>
+      <img ng-src="{{ todo.data.thumbnail}}">
+      <h5>
+       <a href="{{ todo.data.url }}">{{ todo.data.title }}</a>
+     </h5>
     </div>
 
-
+    <button ng-click="getData()">Get Data</button>
   </div>
 
   <!-- App Scripts -->
