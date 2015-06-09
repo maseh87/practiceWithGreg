@@ -1,0 +1,20 @@
+{
+  "name": "angular-test-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/maseh87/practiceWithGreg",
+  "authors": [
+    "Mason Hargrove <maseh87@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "angular": "~1.4.0"
+  }
+}
